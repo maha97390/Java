@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Reverse
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a numbr");
+		int n=sc.nextInt();123
+		int reverse=0;
+		while(n!=0)
+		{
+			int digit=n%10;//d=3
+			reverse=reverse*10+digit;//reverse=0*10+3 - reverse=3
+			n=n/10;//n=12............
+			
+		}
+		System.out.println(reverse);
+		
+	}
+	
+}
