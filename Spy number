@@ -1,0 +1,28 @@
+class SpyNum 
+{
+	public static void main(String[] args) 
+	{
+		
+		
+		for(int i=1;i<=10000;i++)
+		{
+			int t=i;
+			int sum=0;
+		    int product=1;
+			while(t != 0)
+			{
+				int digit=t %10;
+				sum=sum+digit;
+				product=product*digit;
+				t=t/10;
+			}
+			if(sum==product)
+			{
+				System.out.println(i);
+			}
+			
+
+	}
+
+}
+}
