@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class SumOfEvenProductOfOdd
+{
+	public static void main(String[] args) 
+	{
+		
+		Scanner sc= new Scanner(System.in);
+		int num=sc.nextInt();
+		int evenSum=0;
+		int oddProduct=1;
+		while(num!=0)
+		{
+
+			int a=num%10;
+			if(a%2 == 0)
+			{
+				evenSum=evenSum+a;
+			}
+			else
+			{
+				oddProduct=oddProduct*a;
+			}
+			num=num/10;
+		}
+		System.out.println("Sum of Even Digits are:"+evenSum);
+		System.out.println("Product of Odd Digits are:"+oddProduct);
+
+
+	}
+}
