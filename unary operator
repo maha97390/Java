@@ -1,0 +1,27 @@
+class IncrementOp 
+{
+	public static void main(String[] args) 
+	{
+		int a=3;
+        int b=a++ + ++a;
+		System.out.println(b);
+		int c=5;
+		int d=++c + c++ + --c;
+		System.out.println(d);
+		int e=2;
+		int f=e++ + e++ + ++e;
+		System.out.println(f);
+		int g=4;
+		int h=--g + g-- + ++g;
+		System.out.println(h);
+		int i=1;
+		int j=i++ + ++i + i++ + ++i;
+		System.out.println(j);
+        int k = 6, l = 3;
+        boolean result = (k > l) || (++l > k);
+        System.out.println(result);
+		System.out.println(k);
+
+
+	}
+}
