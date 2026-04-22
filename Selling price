@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class  SellingPrice
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the cost price");
+		double cp=sc.nextDouble();
+        System.out.println("Enter the profit percentage");
+		double profitPercentage=sc.nextDouble();
+		double sp=cp*(1+profitPercentage/100);
+		System.out.println(" Selling price is :"+sp);
+
+	}
+}
