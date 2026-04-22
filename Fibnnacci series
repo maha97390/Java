@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class FibonacciSeries
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number :  ");
+		int n=sc.nextInt();
+		int s0=1;
+		int s1=1;
+		System.out.print(s0+" "+s1+" ");
+		for (int i=2;i<n ;i++ )
+		{
+			int s2=s0+s1;
+			System.out.print(s2+" ");
+			s0=s1;
+			s1=s2;
+		}
+	}
+}
