@@ -1,0 +1,51 @@
+import java.util.Scanner;
+class  Patterns17
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter no of rows");
+		Scanner sc=new Scanner(System.in);
+		int row=sc.nextInt();
+		if(row%2 !=0)
+		{
+			int space=row-1;
+		int couple=1;
+		for(int i=1;i<=row;i++)
+		{
+			for(int a=1;a<=space;a++)
+			{
+				System.out.print("  ");//2spaces or one spaces
+			}
+			for(int b=1;b<=couple;b++)
+			{
+				System.out.print(" *  ");//before one space after star 2spaces or before star no space and after star one space
+			}
+			if(i<=row/2)
+			{
+			space--;
+			couple++;
+			}
+			else
+			{
+				space++;
+			    couple--;
+			}
+
+			System.out.println();
+		}
+		}
+		else
+		{
+			System.out.print("Enter odd number os=d rows");
+		}
+	}
+}
+/*               *
+               *   *
+             *   *   *
+           *   *   *   *
+         *   *   *   *   *
+           *   *   *   *
+             *   *   *
+               *   *
+                 *                */
