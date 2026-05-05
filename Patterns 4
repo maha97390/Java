@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Patterns4
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number of rows and columns one by one");
+		int row=sc.nextInt();
+		int column=sc.nextInt();
+		for(int i=1;i<=row;i++)
+		{
+			for(int j=column;j>=1;j--)
+			{
+				System.out.print(" "+j+" ");
+				
+			}
+			System.out.println();
+		}
+	    
+		
+	}
+}
